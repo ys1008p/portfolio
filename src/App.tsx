@@ -1,4 +1,4 @@
-import Gnb from "./components/Gnb";
+import Gnb from "./components/gnb/Gnb";
 
 function App() {
   return (
