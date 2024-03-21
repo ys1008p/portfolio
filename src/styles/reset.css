@@ -8,3 +8,8 @@ a {
   color: var(--font-color);
   text-decoration: none;
 }
+
+ol,
+ul {
+  list-style: none;
+}

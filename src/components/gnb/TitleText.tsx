@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 
 const StyledTitle = styled.h1`
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   border-bottom: 2px solid var(--font-color);
 
   @media (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 30px;
   }
 `;
 
@@ -25,7 +25,7 @@ export default function TitleText() {
       if (currentIndex === title.length - 1) {
         clearInterval(interval);
       }
-    }, 200);
+    }, 80);
 
     return () => clearInterval(interval);
   }, []);
@@ -35,9 +35,11 @@ export default function TitleText() {
   }, [textCursor]);
 
   return (
-    <StyledTitle>
-      {titleText}
-      {textCursor}
-    </StyledTitle>
+    <a href="#">
+      <StyledTitle>
+        {titleText}
+        {textCursor}
+      </StyledTitle>
+    </a>
   );
 }

@@ -3,6 +3,7 @@ import TitleText from "./TitleText";
 import HamburgerButton from "./HamburgerButton";
 import HamburgerModal from "./HamburgerModal";
 import { useState } from "react";
+import GnbItemList from "./GnbItemList";
 
 const StyledContainer = styled.div`
   position: fixed;
@@ -17,9 +18,11 @@ const StyledContainer = styled.div`
 
   @media (min-width: 768px) {
     padding: 3rem;
+    width: 800px;
   }
 
   @media (min-width: 1024px) {
+    width: 1400px;
   }
 `;
 
@@ -31,11 +34,12 @@ export default function Gnb() {
 
   return (
     <>
-      <div id="modal-root"></div>
+      {/* <div id="modal-root"></div> */}
       <StyledContainer>
         <TitleText />
         <HamburgerButton onClick={handleModalOpen} />
         {isModalOpen && <HamburgerModal setIsModalOpen={setIsModalOpen} />}
+        <GnbItemList />
       </StyledContainer>
     </>
   );

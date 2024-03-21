@@ -5,6 +5,10 @@ const HamburgerButton = styled.button`
   width: 30px;
   height: 30px;
   background: url("/public/hambugermenu.svg") no-repeat center / cover;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export default HamburgerButton;
