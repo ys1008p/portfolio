@@ -15,6 +15,7 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  background-color: var(--bg-color);
 
   @media (min-width: 768px) {
     padding: 3rem;
